@@ -1,0 +1,318 @@
+* {
+  box-sizing:border-box;
+  text-decoration: none;
+  margin: 0 auto;
+}
+body {
+  background-color: #F5FAF9;
+  font-family: 'Jua', sans-serif;
+}
+a:link,a:visited {
+  color : gray;
+}
+a:hover {
+  color : #ADE6E3;
+}
+a:active {
+  color : black;
+}
+h3,h4,h5,h6 {
+  display: block;
+  font-size:36px;
+  padding: 50px 0px;
+  color: gray;
+}
+
+/*  nav-bar section   */
+
+.navbar {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F5FAF9;
+  padding: 8px 12px;
+}
+.navbar_logo {
+  font-size: 24px;
+  color : gray;
+}
+.navbar_logo i {
+  color:#74C0C3;
+}
+.navbar_menu {
+  display:flex;
+  list-style: none;
+  padding-left: 0;
+}
+.navbar_menu li {
+  padding: 8px 12px;
+}
+.navbar_menu li:hover {
+  background-color: #E1F2EF;
+  border-radius: 4px;
+}
+.navbar_icons {
+  list-style:none;
+  color:gray;
+  display:flex;
+  padding-left: 0px;
+}
+.navbar_icons i {
+  padding: 8px 12px;
+}
+.navbar_togglebtn {
+  display: none;
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+  color:#74C0C3;
+}
+
+/*  home section   */
+
+.home-container-box {
+  width: 100%;
+  height:600px;
+  background-color: #ADE6E3;
+  margin: 0 auto;
+  text-align: center;
+}
+h2 {
+  display: block;
+  font-size:36px;
+  padding: 50px 0px;
+  color: #F5FAF9;
+}
+.home-profile {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  transition: all 1s;
+}
+.home-profile:hover {
+  transform: rotateY(180deg);
+}
+.home-profile-comment {
+  color:#F5FAF9;
+  font-size:24px;
+  padding: 35px 0px;
+}
+
+/*  about section   */
+
+.about-container-box {
+  width: 100%;
+  height:800px;
+  background-color: #F5FAF9;
+  margin: 0 auto;
+  text-align: center;
+}
+.about-flex-box {
+  display:flex;
+  max-width:1280px;
+}
+.about-profile {
+  width: 400px;
+  height: 500px;
+  border-radius: 10px;
+  display:block;
+}
+.about-profile-comment {
+  width: 500px;
+  font-size: 24px;
+  text-align: left;
+  line-height: 60px;
+}
+
+/*  skills section   */
+
+.skills-container-box {
+  width: 100%;
+  height:800px;
+  background-color: #E1F2EF;
+  margin: 0 auto;
+  text-align: center;
+}
+.skills-flex-box {
+  display:flex;
+  max-width:1280px;
+}
+.skills-flex-img {
+  width: 400px;
+}
+.skills-flex-img>img {
+  width: 100px;
+  height: 100px;
+}
+.skills-profile-comment {
+  width: 500px;
+  font-size: 24px;
+  text-align: left;
+  line-height: 60px;
+}
+
+/*  workssection   */
+
+.works-container-box {
+  width: 100%;
+  height:800px;
+  background-color: #F5FAF9;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*  contact section   */
+
+.contact-container-box {
+  width: 100%;
+  height:400px;
+  background-color: #74C0C3;
+  margin: 0 auto;
+  text-align: center;
+}
+.contact-mail {
+  font-size:36px;
+}
+.contact-container-box>a>img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 15px 0px 15px 0px;
+}
+.hover-img {
+  transform: scale(1);
+  transition: all 0.5s;
+}
+.hover-img :hover{
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display:none;
+    flex-direction:column;
+    align-items: flex-start;
+    padding: 8px 24px;
+  }
+  .navbar_menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .navbar_menu li {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar_icons {
+    display:none;
+    justify-content: center;
+    width: 100%; 
+  }
+  .navbar_togglebtn {
+    display: block;
+  }
+
+  .navbar_menu.active,
+  .navbar_icons.active {
+    display: flex;
+  }
+
+
+  /*  about section   */
+
+  .about-container-box {
+    height:600px;
+  }
+  .about-profile {
+    width: 200px;
+    height: 300px;
+  }
+  .about-profile-comment {
+    width: 400px;
+    font-size: 16px;
+    line-height: 40px;
+  }
+
+  .skills-container-box {
+    height:600px;
+  }
+  .skills-profile-comment {
+    width: 400px;
+    font-size: 16px;
+    line-height: 40px;
+  }
+  .skills-flex-img {
+    width: 180px;
+  }
+  .skills-flex-img>img {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (max-width: 576px) {
+
+
+  /*  home section   */
+
+  .home-container-box {
+    height:500px;
+  }
+  h2 {
+    font-size:24px;
+    padding: 30px 0px;
+  }
+  .home-profile {
+    width: 200px;
+    height: 200px;
+  }
+  .home-profile-comment {
+    color:#F5FAF9;
+    font-size:24px;
+    padding: 30px 0px;
+  }
+
+/*  about section   */
+
+  .about-container-box {
+    height:1200px;
+  }
+  .about-flex-box {
+    flex-direction:column;
+  }
+  .about-profile {
+    width: 450px;
+    height: 500px;
+  }
+  .about-profile-comment {
+    margin-top: 50px;
+    width: 400px;
+    height:800px;
+    font-size: 24px;
+    line-height: 40px;
+
+  }
+
+/*  skills section   */
+
+  .skills-container-box {
+    height:1200px;
+  }
+  .skills-profile-comment {
+    margin-top: 50px;
+    width: 400px;
+    height:800px;
+    font-size: 24px;
+    line-height: 40px;
+  }
+  .skills-flex-box {
+    flex-direction:column;
+  }
+  .skills-flex-img {
+    width: 350px;
+  }
+  .skills-flex-img>img {
+    width: 100px;
+    height: 100px;
+  }
+
+}
