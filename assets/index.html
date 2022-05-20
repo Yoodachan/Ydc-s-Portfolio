@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="YOU DA CHAN'S PORTFOLIO" />
+  <meta property="og:description" content="응애 포토폴리오" />
+  <meta property="og:image" content="https://ydc-portfolio-site.netlify.app/assets/Profile_middle.jpg" />
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/server_icon.ico">
+  <!-- 부트 스트랩 링크 -->
+
+  <!-- 폰트 어썸 링크 -->
+  <script src="https://kit.fontawesome.com/73110e26f5.js" crossorigin="anonymous"></script>
+  <!-- 구글 폰트 링크 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+  <!-- 제이쿼리 CDN 링크 -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="./main.js" defer></script>
+  <link rel="stylesheet" href="./style.css">
+  <title>유다찬 포토폴리오</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar_logo">
+      <i class="fa-solid fa-fish"></i>
+      <a href="#home">.YDC</a>
+    </div>
+
+    <ul class="navbar_menu">
+      <li><a href=#home>Home</a></li>
+      <li><a href=#about>About Me</a></li>
+      <li><a href=#skills>Skills</a></li>
+      <li><a href=#works>Works</a></li>
+      <li><a href=#contact>Contact</a></li>
+    </ul>
+    <ul class="navbar_icons">
+      <li><i class="fa-brands fa-github"></i></li>
+      <li><i class="fa-solid fa-computer"></i></li>
+    </ul>
+    <a href="#" class="navbar_togglebtn">
+      <i class="fa-solid fa-bars"></i>
+    </a>
+  
+  </nav>
+  <section id="home" class="home-container-box">
+    <h2>YOU DA CHAN'S PORTFOLIO</h3>
+      <div class="home-flex-box">
+        <img  class="home-profile" src="./assets/Profile_main.png">
+        <div class="home-profile-comment">
+          안녕하세요 웹 프론트엔드 개발자를 희망하는 유다찬입니다.<br/>
+          제 포트폴리오 페이지에 오신걸 환영합니다.
+        </div>
+      </div>
+  </section>
+
+  <section id="about" class="about-container-box">
+    <h3>About Me</h3>
+    <div class="about-flex-box">
+      <div class="about-flex-img">
+        <img class="about-profile" src="./assets/Profile_middle.png">
+      </div>
+
+      <div class="about-flex-text">
+        <ul class="about-profile-comment">
+          <li>호기심과 도전의식을 가지고 새로운 시도를 두려워 하지 않는 프론트엔드 개발자가 되겠습니다.</li>
+          <li>사용자의 경험을 중요시 여기며 불편한 점을 개선하는 것에 행복을 느끼는 개발자가 되겠습니다.</li>
+          <li>팀원들과 소통을 통해 작업의 우선순위를 정하고 유연하게 대처하는 개발자가 되겠습니다.</li>
+          <li>항상 배우고 습득하는데 즐거움을 느끼는 어제보다 나은 개발자가 되겠습니다.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="skills" class="skills-container-box">
+    <h4>Skills</h4>
+      <div class="skills-flex-box">
+
+        <div class="skills-flex-img">
+          <img src="./assets/html5.png" alt="html5" />
+          <img src="./assets/css3.png" alt="css3" />
+          <img src="./assets/javascript.png" alt="javascript" />
+          <img src="./assets/jquery.png" alt="jquery" />
+          <img src="./assets/git.png" alt="git" />
+          <img src="./assets/bootstrap.png" alt="bootstrap" />
+        </div>
+
+        <div class="skills-flex-text">
+          <ul class="skills-profile-comment">
+            <li> 웹표준과 웹 접근성을 고려한 시멘틱 마크업 작업이 가능합니다.</li>
+            <li> HTML과 CSS로 주어진 디자인 레이아웃에 따라 페이지를 디자인할 수 있습니다.</li>
+            <li> CSS Media Query를 사용하여 반응형 웹을 만들 수 있습니다.</li>
+            <li> Java Script, JQuery와 React를 사용하여 DOM 객체를 제어할 수 있습니다.</li>
+          </ul>
+        </div>
+
+      </div>
+  </section >
+
+  <section id="works" class="works-container-box">
+    <h4>Portfolio</h4>
+      <div class="works-flex-box">
+        <div class="works-flex-first">
+          <p>미니 방명록</p>
+          <img src="./assets/first.png"/>
+        </div>
+        <div class="works-flex-second">
+          <p>영화 평점 사이트</p>
+          <img src="./assets/second.png"/>
+        </div>
+        <div class="works-flex-third">
+          <p>투두 리스트</p>
+          <img src="./assets/third.png"/>
+        </div>
+      </div>
+
+  </section >
+
+  <section id="contact" class="contact-container-box">
+    <h5>Conact</h5>
+    <div class="contact-mail">miniming1026@naver.com</div>
+    <a class="hover-img" href="https://github.com/YOUDACHAN" alt="github.link" target="_blank"><img src="./assets/github.png"></a>
+    <a class="hover-img" href="https://velog.io/@miniming1026" alt="velog.link" target="_blank"><img src="./assets/velog.png"></a>
+    <p>2022 You Dachan  - All rights reserved</p>
+    <p>본 사이트는 상업적 목적이 아닌 개인 포트폴리오 사이트로 제작되었습니다.</p>
+  </section >
+
+  <script>
+  </script>
+  
+</body>
+</html>
