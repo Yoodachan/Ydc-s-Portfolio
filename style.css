@@ -325,7 +325,7 @@ h2 {
   }
   .about-profile-comment {
     margin-top: 50px;
-    width: 400px;
+    max-width: 400px;
     height:800px;
     font-size: 16px;
     line-height: 40px;
@@ -339,7 +339,7 @@ h2 {
   }
   .skills-profile-comment {
     margin-top: 50px;
-    width: 400px;
+    max-width: 400px;
     height:800px;
     font-size: 16px;
     line-height: 40px;
