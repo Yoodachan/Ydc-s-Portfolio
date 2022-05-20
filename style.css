@@ -276,7 +276,13 @@ h2 {
    /*  works section   */
 
   .works-container-box {
-    height: 1500px;
+    height: 1600px;
+  }
+  .works-flex-first p,
+  .works-flex-second p,
+  .works-flex-third p {
+    display:block;
+    margin: 20px 0px 20px 0px;
   }
   .works-flex-box {
     flex-direction:column;
@@ -359,18 +365,5 @@ h2 {
   }
 
 /*  works section   */
-
-   .works-container-box {
-    height: 1500px;
-  }
-  .works-flex-box {
-    flex-direction:column;
-  }
-  .works-flex-first>img,
-  .works-flex-second>img,
-  .works-flex-third>img {
-    width: 300px;
-    height: 400px;
-  }
 
 }
