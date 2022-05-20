@@ -321,7 +321,7 @@ h2 {
 /*  about section   */
 
   .about-container-box {
-    height:1200px;
+    height:1000px;
   }
   .about-flex-box {
     flex-direction:column;
@@ -329,9 +329,9 @@ h2 {
   .about-profile {
     width: 350px;
     height: 500px;
+    margin-bottom: 30px;
   }
   .about-profile-comment {
-    margin-top: 50px;
     max-width: 400px;
     height:800px;
     font-size: 16px;
@@ -339,14 +339,12 @@ h2 {
     display: inline;
 
   }
-
 /*  skills section   */
 
   .skills-container-box {
-    height:1200px;
+    height:600px;
   }
   .skills-profile-comment {
-    margin-top: 50px;
     max-width: 400px;
     height:800px;
     font-size: 16px;
@@ -358,6 +356,7 @@ h2 {
   }
   .skills-flex-img {
     width: 350px;
+    margin-bottom: 30px;
   }
   .skills-flex-img>img {
     width: 100px;
